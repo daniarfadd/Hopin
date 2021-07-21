@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".rankuniv.RankIndoActivity">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="8dp"
+            android:text="TOP 5 UNIVERSITIES IN INDONESIA"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/judul_kecil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="according to the QS World university rankings 2022"
+            app:layout_constraintTop_toBottomOf="@id/judul"
+            app:layout_constraintStart_toStartOf="@id/judul"
+            app:layout_constraintEnd_toEndOf="@id/judul"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="13dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ui_logo"
+            android:layout_marginTop="32dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ui"
+            app:layout_constraintTop_toBottomOf="@id/judul_kecil"
+            app:layout_constraintStart_toStartOf="@id/judul_kecil"
+            app:layout_constraintEnd_toEndOf="@id/judul_kecil"/>
+        <TextView
+            android:id="@+id/ui_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universitas Indonesia"
+            app:layout_constraintTop_toBottomOf="@id/ui_logo"
+            app:layout_constraintStart_toStartOf="@id/ui_logo"
+            app:layout_constraintEnd_toEndOf="@id/ui_logo"
+            android:textColor="@color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itb_logo"
+            android:layout_marginTop="42dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/itb"
+            app:layout_constraintTop_toBottomOf="@id/ui_logo"
+            app:layout_constraintStart_toStartOf="@id/ui_logo"
+            app:layout_constraintEnd_toEndOf="@id/ui_logo"/>
+        <TextView
+            android:id="@+id/itb_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandung Institute of Technology"
+            app:layout_constraintTop_toBottomOf="@id/itb_logo"
+            app:layout_constraintStart_toStartOf="@id/itb_logo"
+            app:layout_constraintEnd_toEndOf="@id/itb_logo"
+            android:textColor="@color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ugm_logo"
+            android:layout_marginTop="42dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ugm"
+            app:layout_constraintTop_toBottomOf="@id/itb_logo"
+            app:layout_constraintStart_toStartOf="@id/itb_logo"
+            app:layout_constraintEnd_toEndOf="@id/itb_logo"/>
+        <TextView
+            android:id="@+id/ugm_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gadjah Mada University"
+            app:layout_constraintTop_toBottomOf="@id/ugm_logo"
+            app:layout_constraintStart_toStartOf="@id/ugm_logo"
+            app:layout_constraintEnd_toEndOf="@id/ugm_logo"
+            android:textColor="@color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/unair_logo"
+            android:layout_marginTop="42dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/unair"
+            app:layout_constraintTop_toBottomOf="@id/ugm_logo"
+            app:layout_constraintStart_toStartOf="@id/ugm_logo"
+            app:layout_constraintEnd_toEndOf="@id/ugm_logo"/>
+        <TextView
+            android:id="@+id/unair_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Airlangga University"
+            app:layout_constraintTop_toBottomOf="@id/unair_logo"
+            app:layout_constraintStart_toStartOf="@id/unair_logo"
+            app:layout_constraintEnd_toEndOf="@id/unair_logo"
+            android:textColor="@color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ipb_logo"
+            android:layout_marginTop="42dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ipb"
+            app:layout_constraintTop_toBottomOf="@id/unair_logo"
+            app:layout_constraintStart_toStartOf="@id/unair_logo"
+            app:layout_constraintEnd_toEndOf="@id/unair_logo"/>
+        <TextView
+            android:id="@+id/ipb_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bogor Agricultural University"
+            app:layout_constraintTop_toBottomOf="@id/ipb_logo"
+            app:layout_constraintStart_toStartOf="@id/ipb_logo"
+            app:layout_constraintEnd_toEndOf="@id/ipb_logo"
+            android:textColor="@color/black"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

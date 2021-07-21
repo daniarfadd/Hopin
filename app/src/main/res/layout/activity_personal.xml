@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PersonalActivity"
+        >
+
+        <TextView
+            android:id="@+id/pro_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="PERSONAL"
+            android:textColor="@color/register_bk_color"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pro_pic"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pro_header"
+            android:src="@drawable/avatar"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personal_data"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="16dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pro_header">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_datadiri">
+
+                <TextView
+                    android:id="@+id/personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Afif Baikhati"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/edit_profile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pencil"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/personal_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/garis"
+            android:layout_width="1dp"
+            android:layout_height="420dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_data" />
+
+        <TextView
+            android:id="@+id/header_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="42dp"
+            android:textColor="@color/black"
+            android:text="Score Report"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/garis"
+            app:layout_constraintTop_toTopOf="@+id/garis" />
+        <TextView
+            android:id="@+id/score_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="95"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/header_report"
+            app:layout_constraintStart_toStartOf="@id/header_report"
+            app:layout_constraintTop_toBottomOf="@+id/header_report" />
+
+<!--DIBAWAH INI CARDVIEW SNM-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rec_snm"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/garis"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/score_report">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_datadiri"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/rec_card_snm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="Recommendation Kedokteran UI"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/more_snm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:text="more"
+                    android:textColor="#10AFA8"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_card_snm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+<!--DIBAWAH INI UNTUK LAYOUT SBM-->
+        <TextView
+            android:id="@+id/header_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="32dp"
+            android:text="Try Out Score"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/garis"
+            app:layout_constraintTop_toTopOf="@+id/garis" />
+        <TextView
+            android:id="@+id/score_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="98"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/header_to"
+            app:layout_constraintStart_toStartOf="@id/header_to"
+            app:layout_constraintTop_toBottomOf="@+id/header_to" />
+
+        <!--DIBAWAH INI CARDVIEW SBM-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rec_sbm"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/garis"
+            app:layout_constraintTop_toBottomOf="@+id/score_to">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_datadiri"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/rec_card_sbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:maxLines="2"
+                    android:text="Recommendation Kedokteran UB"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/more_sbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:text="more"
+                    android:textColor="#10AFA8"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_card_sbm" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

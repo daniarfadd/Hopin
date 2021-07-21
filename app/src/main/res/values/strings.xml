@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hopin</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="dashboardText">DASHBOARD</string>
+    <string name="name">Name</string>
+    <string name="dummy_name">Afif Baikhati</string>
+    <string name="email">Email</string>
+    <string name="dummy_email">afifbaikhati@yahoo.com</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="dummynumber">021021021</string>
+    <string name="age">Age</string>
+    <string name="dummyage">17</string>
+    <string name="save">Save</string>
+    <string name="gender">Gender</string>
+    <string name="dummygender">Male</string>
+    <string name="financial">Financial</string>
+    <string name="dummyfinancial">Rp 5.000.000</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="change">Edit</string>
+    <string name="nilai">ex : 580</string>
+</resources>
