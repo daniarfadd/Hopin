@@ -20,4 +20,7 @@
     <string name="female">Female</string>
     <string name="change">Edit</string>
     <string name="nilai">ex : 580</string>
+    <string name="biaya">ex : 2500000</string>
+    <string name="heroes_major">Major</string>
+    <string name="detail">Deskripsi jurusan</string>
 </resources>

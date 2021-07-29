@@ -15,7 +15,7 @@ import coding.insight.hopin.databinding.ActivityRankNilaiBinding
 class RankNilaiActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener, View.OnClickListener {
     private lateinit var binding: ActivityRankNilaiBinding
     var uni = arrayOf("Universitas Indonesia", "Institut Teknologi Bandung", "Universitas Gadjah Mada", "Universitas Brawijaya", "Universitas Andalas")
-    var major = arrayOf("Computer Science", "Communications", "Business", "Economics", "Chemical Engineering")
+    var major = arrayOf("Computer Science", "Communications", "Business", "Economics", "Chemical Engineering", "Medical", "Accountancy")
     val NEW_SPINNER_ID = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,7 +81,7 @@ class RankNilaiActivity : AppCompatActivity(), AdapterView.OnItemSelectedListene
     override fun onClick(v: View) {
         when(v.id){
             R.id.btn_rank -> {
-                binding.tvTest.setVisibility(View.GONE)
+                binding.tableRank.setVisibility(View.VISIBLE)
             }
         }
     }
